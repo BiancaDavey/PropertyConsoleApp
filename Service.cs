@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace exampleApp
 {
@@ -38,25 +37,32 @@ namespace exampleApp
 
         // TODO: LINQ query builder.
 
-        // The ViewServices list accepts a category of service provider as an argument and converts the list containing services of this type into an array.
+        // The FindServices list accepts a category of service provider as an argument and converts the list containing services of this type into an array.
         // TODO: access to demonstrate in Program.cs class.
-        public string[] ViewServices(string serviceCategory){
+        // Need to connect to an Object...
+        public override void FindServices(){
+
+            Console.WriteLine("Enter a category of service: Plumbing, Electric, Gas or Other");
+            string serviceCategory = Console.ReadLine();
 
             if ((serviceCategory == "Plumbing") || (serviceCategory == "plumbing")){
                 string[] plumbingList = plumbing.ToArray();
-                return plumbingList;
+                Console.WriteLine($"Plumbers: {plumbingList}");
             }
             else if ((serviceCategory == "Electric") || (serviceCategory == "electric")){
                 string[] electricList = electric.ToArray();
-                return electricList;
+                Console.WriteLine($"Electricians: {electricList}");
+                //return electricList;
             }
             else if ((serviceCategory == "Gas") || (serviceCategory == "gas")){
                 string[] gasList = gas.ToArray();
-                return gasList;
+                Console.WriteLine($"Gas services: {gasList}");
+                //return gasList;
             }
             else {
                 string[] miscellaneousServices = otherService.ToArray();
-                return miscellaneousServices;
+                Console.WriteLine($"{serviceCategory} and other services: {miscellaneousServices}");
+                //return miscellaneousServices;
             } 
         }
 

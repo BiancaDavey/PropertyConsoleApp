@@ -1,5 +1,7 @@
 using System;
 using System.Net.Mail;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace exampleApp
 {
@@ -35,7 +37,6 @@ namespace exampleApp
         }
 
         // The VerifyEmail method verifies that a provided email address satisfies formatting requirements.
-
         public string VerifyEmail(string email){
 
             string invalid = "Invalid";
@@ -70,6 +71,17 @@ namespace exampleApp
 
         // Subclasses of the Client class must implement a ClientProfile method.
         public abstract string ClientProfile();
+
+        // The FindServices method is overridden in the Services subclass and enables the user to search for available services by category.
+        // TODO: implement and add functionality to search by location, or service provider name.
+
+        public virtual void FindServices(){
+
+        }
+            //string[] servicesFound = {"Services: "};
+            //Console.WriteLine(FindServices());
+            //return servicesFound;
+        
 
 
     }

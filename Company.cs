@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace exampleApp
 {
     class Company : Client
