@@ -22,14 +22,14 @@ C# and .NET are required to run this program.
 ## Usage example
 
 ```
-nano SavingsAccountDemo.java
+nano Program.cs
 ```
-[![Savings-Account-Create-Objects.png](https://i.postimg.cc/P5zz2Kvy/Savings-Account-Create-Objects.png)](https://postimg.cc/SnRMK6rY)
+[![Property-Console-App01.png](https://i.postimg.cc/xjxtFYR9/Property-Console-App01.png)](https://postimg.cc/kDSQB0zH)
 
 ```
-java SavingsAccountDemo
+dotnet run
 ```
-[![Savings-Account-Demo.png](https://i.postimg.cc/d0ZQJNRm/Savings-Account-Demo.png)](https://postimg.cc/HJH122hV)
+[![Property-Console-App02.png](https://i.postimg.cc/N0B6jP4N/Property-Console-App02.png)](https://postimg.cc/bZVD6g4b)
 
 
 ## Author
