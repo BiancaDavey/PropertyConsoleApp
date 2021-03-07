@@ -8,6 +8,8 @@ namespace exampleApp
 
         public string CompanyName { get; }
 
+        //List<List<Company>> companies = new List<List<Company>>();
+
         public Company(string contactName, string location, string companyName, string email, string phone) : base(contactName, location, email, phone)
         {
             CompanyName = companyName;
