@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace exampleApp
 {
@@ -35,8 +36,10 @@ namespace exampleApp
             }
         }
 
+        // TODO: LINQ query builder.
+
         // The ViewServices list accepts a category of service provider as an argument and converts the list containing services of this type into an array.
-        // TODO: access to demonstrate in the Program.cs class.
+        // TODO: access to demonstrate in Program.cs class.
         public string[] ViewServices(string serviceCategory){
 
             if ((serviceCategory == "Plumbing") || (serviceCategory == "plumbing")){
@@ -55,12 +58,6 @@ namespace exampleApp
                 string[] miscellaneousServices = otherService.ToArray();
                 return miscellaneousServices;
             } 
-        }
-        
-        // TODO: Implement a search function.
-        public string findService(string serviceType){
-            string s = "";  
-            return s;
         }
 
         public override string ClientProfile()

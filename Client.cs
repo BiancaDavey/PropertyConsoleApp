@@ -22,7 +22,6 @@ namespace exampleApp
             Email = VerifyEmail(email);
             Phone = phone;
             AddClient();
-            // TODO: Email and Phone.
         }
 
         // The GenerateID method combines a substring of the first two characters of the client's name with a random 4 digit integer to form a client ID.
